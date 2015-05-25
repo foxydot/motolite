@@ -114,6 +114,15 @@ function msdlab_header_right(){
     }
 }
 
+//add featured image to page header
+function msdlab_header_attr( $attributes ){
+    global $post;
+    if(is_page()){
+        $attributes['style'] .= 'background-image: url('.msdlab_get_thumbnail_url($post->ID, 'full').');';
+    }
+    return $attributes;
+}
+
 function msdlab_do_header() {
 
     genesis_markup( array(
@@ -308,7 +317,7 @@ function msdlab_newer_link_text($content) {
         return $newerlink;
 }
 
-add_filter( 'genesis_attr_site-container', 'msdlab_background_site_container', 10);
+//add_filter( 'genesis_attr_site-container', 'msdlab_background_site_container', 10);
 function msdlab_background_site_container( $attributes ){
     $attributes['style'] .= 'background-image:url('.msdlab_get_thumbnail_url(null,'full').')';
     return $attributes;

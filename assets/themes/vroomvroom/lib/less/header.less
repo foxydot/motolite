@@ -20,7 +20,9 @@ Site Header
 ---------------------------------------------------------------------------------------------------- */
 
 .site-header {
-  background-color: @offwhite;
+  min-height: 450px;
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .site-header .wrap {
@@ -61,13 +63,13 @@ Site Header
 }
 
 .site-description {
-  color: #999;
-  font-size: 16px;
-  font-size: 1.6rem;
+  .customserif(2.4);
+  color: @black;
   font-weight: 300;
   line-height: 1;
-  margin-bottom: 0;
   float: left;
+  width: 30rem;
+  margin: 7rem 0 0 2rem;
 }
 
 /* Full width header, no widgets */
@@ -77,25 +79,27 @@ Site Header
   /*width: 100%;*/
 }
 
-.header-image .site-title a {
-  display: block;
-  text-indent: -9999px;
+.header-image .site-title{ 
+  .skew(150);
+  padding: 2.5rem;
+  margin: 30px 0 0 40px;
+  margin: 3rem 0 0 4rem;
+  a {
+    display: block;
+    text-indent: -9999px;
+    .skew(30);
+    min-height: 50px;
+    width: 200px;
+    height: 50px;
+    background: url(../img/logo.png) no-repeat center left;
+    background-size: contain;
+  }
 }
 
 /* Logo, hide text */
 
 .header-image .site-header .wrap {
   padding: 0;
-}
-
-.header-image .site-title a {
-  min-height: 70px;
-  width: 292px;
-  height: 70px;
-  background: url(../img/logo.png) no-repeat center left;
-  background-size: contain;
-  margin: 10px;
-  margin: 1rem;
 }
 
 /* Widget Area
@@ -154,18 +158,20 @@ Site Header
     .search-form{
       display: inline-block;
       padding: 0;
+      margin-top: 3rem;
       margin-left: 1rem;
       position: relative;
       whitespace: nowrap;
       input[type="search"] {
         font-size: 1.4rem;
-        width: 0;
-        background: transparent;
+        width: 25rem;
+        background: white;
         padding: 0.6rem 2.4rem 0.6rem 1rem;
         border: 0;
         border-right: 1px solid @offwhite;
-        border-radius: 0;
+        border-radius: 2px;
         line-height: 1;
+        height: 30px;
         -webkit-transition: width 0.5s linear;
 -moz-transition: width 0.5s linear;
 -ms-transition: width 0.5s linear;
@@ -174,22 +180,22 @@ transition: width 0.5s linear;
       }
       input[type="submit"] {
         .fontawesome;
-        background: transparent;
+        background: @green;
         border: 0 none;
+        border-radius: 2px;
         clip: auto;
-        color: @ltgrey;
+        color: @white;
         display: inline-block;
         font-size: 1.2rem;
-        height: 18px;
+        height: 30px;
         line-height: 1;
         text-align: center;
-        width: 18px;
-        right: 0.5rem;
-        top: 0.4rem;
+        width: 36px;
+        right: 0rem;
+        top: 0rem;
       }
       &:hover{
         input[type="search"] {
-        width: 25rem;
       }
       }
     }

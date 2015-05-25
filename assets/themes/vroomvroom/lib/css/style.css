@@ -5925,9 +5925,6 @@ article {
 }
 .site-inner {
   clear: both;
-  padding-top: 40px;
-  padding-top: 4rem;
-  background: #f2f3f5;
 }
 /* Column Widths and Positions
 --------------------------------------------- */
@@ -6251,7 +6248,9 @@ img#wpstats {
 Site Header
 ---------------------------------------------------------------------------------------------------- */
 .site-header {
-  background-color: #f2f3f5;
+  min-height: 450px;
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 .site-header .wrap {
   padding: 40px 0;
@@ -6288,35 +6287,50 @@ Site Header
   color: #333;
 }
 .site-description {
-  color: #999;
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-family: Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 24px;
+  font-size: 2.4rem;
+  line-height: 1.625;
+  color: #000000;
   font-weight: 300;
   line-height: 1;
-  margin-bottom: 0;
   float: left;
+  width: 30rem;
+  margin: 7rem 0 0 2rem;
 }
 /* Full width header, no widgets */
 .header-full-width .title-area,
 .header-full-width .site-title {
   /*width: 100%;*/
 }
+.header-image .site-title {
+  -webkit-transform: skew(150deg);
+  -moz-transform: skew(150deg);
+  -o-transform: skew(150deg);
+  -ms-transform: skew(150deg);
+  transform: skew(150deg);
+  padding: 2.5rem;
+  margin: 30px 0 0 40px;
+  margin: 3rem 0 0 4rem;
+}
 .header-image .site-title a {
   display: block;
   text-indent: -9999px;
+  -webkit-transform: skew(30deg);
+  -moz-transform: skew(30deg);
+  -o-transform: skew(30deg);
+  -ms-transform: skew(30deg);
+  transform: skew(30deg);
+  min-height: 50px;
+  width: 200px;
+  height: 50px;
+  background: url(../img/logo.png) no-repeat center left;
+  background-size: contain;
 }
 /* Logo, hide text */
 .header-image .site-header .wrap {
   padding: 0;
-}
-.header-image .site-title a {
-  min-height: 70px;
-  width: 292px;
-  height: 70px;
-  background: url(../img/logo.png) no-repeat center left;
-  background-size: contain;
-  margin: 10px;
-  margin: 1rem;
 }
 /* Widget Area
 --------------------------------------------- */
@@ -6380,6 +6394,7 @@ Site Header
 .pre-header .widget-area .search-form {
   display: inline-block;
   padding: 0;
+  margin-top: 3rem;
   margin-left: 1rem;
   position: relative;
   whitespace: nowrap;
@@ -6387,13 +6402,14 @@ Site Header
 .site-header .widget-area .search-form input[type="search"],
 .pre-header .widget-area .search-form input[type="search"] {
   font-size: 1.4rem;
-  width: 0;
-  background: transparent;
+  width: 25rem;
+  background: white;
   padding: 0.6rem 2.4rem 0.6rem 1rem;
   border: 0;
   border-right: 1px solid #f2f3f5;
-  border-radius: 0;
+  border-radius: 2px;
   line-height: 1;
+  height: 30px;
   -webkit-transition: width 0.5s linear;
   -moz-transition: width 0.5s linear;
   -ms-transition: width 0.5s linear;
@@ -6403,22 +6419,19 @@ Site Header
 .site-header .widget-area .search-form input[type="submit"],
 .pre-header .widget-area .search-form input[type="submit"] {
   font-family: FontAwesome;
-  background: transparent;
+  background: #9ca728;
   border: 0 none;
+  border-radius: 2px;
   clip: auto;
-  color: #959595;
+  color: #ffffff;
   display: inline-block;
   font-size: 1.2rem;
-  height: 18px;
+  height: 30px;
   line-height: 1;
   text-align: center;
-  width: 18px;
-  right: 0.5rem;
-  top: 0.4rem;
-}
-.site-header .widget-area .search-form:hover input[type="search"],
-.pre-header .widget-area .search-form:hover input[type="search"] {
-  width: 25rem;
+  width: 36px;
+  right: 0rem;
+  top: 0rem;
 }
 .header-image .site-header .widget-area {
   padding: 0;
@@ -6529,51 +6542,35 @@ Site Navigation
 .site-header .sub-menu .sub-menu {
   margin-top: -55px;
 }
-/* Top tab Navigation
---------------------------------------------- */
-.tab-menu {
-  padding: 0;
-}
-.tab-menu .genesis-nav-menu .menu-item {
-  width: auto;
-  position: relative;
-  border-radius: 0 0 0.4rem 0.4rem;
-  background-color: #4192ca;
-}
-.tab-menu .genesis-nav-menu .menu-item a {
-  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  font-size: 1.4rem;
-  line-height: 1.625;
-  line-height: 1;
-  padding: 1rem 1.6rem;
-  color: #ffffff;
-}
-.tab-menu .genesis-nav-menu .menu-item a:hover {
-  color: #ffffff;
-}
-.tab-menu .genesis-nav-menu .menu-item.schedule {
-  background-color: #7f7f7f;
-}
-.tab-menu .genesis-nav-menu li.menu-item.last-child {
-  border: 0;
-}
 /* Primary Navigation
 --------------------------------------------- */
 .nav-primary {
   display: inline-block;
-  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  font-size: 1.4rem;
-  line-height: 1.625;
 }
 .nav-primary li.menu-item {
   padding: 0;
+  background-color: #9ca728;
+  margin-left: -5px;
+  border-left: 1px solid #767e1e;
+  -webkit-transform: skew(150deg);
+  -moz-transform: skew(150deg);
+  -o-transform: skew(150deg);
+  -ms-transform: skew(150deg);
+  transform: skew(150deg);
 }
 .nav-primary li.menu-item a {
-  padding: 4.4rem 1rem 1rem;
+  font-family: Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 21px;
+  font-size: 2.1rem;
+  line-height: 1.625;
+  padding: 1rem 1rem;
+  -webkit-transform: skew(30deg);
+  -moz-transform: skew(30deg);
+  -o-transform: skew(30deg);
+  -ms-transform: skew(30deg);
+  transform: skew(30deg);
+  color: #ffffff;
 }
 .nav-primary li.menu-item .sub-menu {
   background-color: #ffffff;
@@ -6613,6 +6610,7 @@ Site Navigation
 .nav-primary li.current-menu-item a:hover,
 .nav-primary li.current-menu-ancestor a:hover {
   text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
 }
 .mainNav > ul > li.first > ul > li.title > ul > li > ul > li {
   padding: 3px 0;
@@ -6620,50 +6618,77 @@ Site Navigation
 /* Secondary Navigation
 --------------------------------------------- */
 .nav-secondary {
-  padding: 0.5rem 0;
+  display: inline-block;
+  margin-top: 10px;
+  margin-top: 1rem;
 }
-.nav-secondary .wrap li.menu-item {
-  width: auto;
-  position: relative;
+.nav-secondary li.menu-item {
+  padding: 0;
+  background-color: #000000;
+  margin-left: -5px;
+  border-left: 1px solid #4d4d4d;
+  -webkit-transform: skew(30deg);
+  -moz-transform: skew(30deg);
+  -o-transform: skew(30deg);
+  -ms-transform: skew(30deg);
+  transform: skew(30deg);
 }
-.nav-secondary .wrap li.menu-item > a {
-  font-family: "Raleway", "Helvetica Neue", "Trebuchet MS", Calibri, sans-serif;
+.nav-secondary li.menu-item a {
+  font-family: Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif;
   font-weight: 400;
-  font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 1.625;
-  padding: 0.5rem 1rem;
-  color: #959595;
-  text-transform: uppercase;
+  padding: 1rem 1rem;
+  -webkit-transform: skew(150deg);
+  -moz-transform: skew(150deg);
+  -o-transform: skew(150deg);
+  -ms-transform: skew(150deg);
+  transform: skew(150deg);
+  color: #ffffff;
 }
-.nav-secondary .wrap li.menu-item > a:hover {
+.nav-secondary li.menu-item .sub-menu {
+  background-color: #ffffff;
+  margin-top: 0px;
+  -webkit-box-shadow: 0 10px 10px rgba(20, 20, 20, 0.5);
+  box-shadow: 0 10px 10px rgba(20, 20, 20, 0.5);
+  -webkit-box-shadow: 0px 10px 10px rgba(20, 20, 20, 0.5);
+  -moz-box-shadow: 0px 10px 10px rgba(20, 20, 20, 0.5);
+  box-shadow: 0px 10px 10px rgba(20, 20, 20, 0.5);
+}
+.nav-secondary li.menu-item .sub-menu li.menu-item {
+  background-color: #ffffff;
+  padding: 0 2rem;
+  width: 100%;
+}
+.nav-secondary li.menu-item .sub-menu li.menu-item a {
+  background-color: transparent;
+  border: 0;
+  color: #245b81;
+  padding: 1rem 0;
+  width: 100%;
+}
+.nav-secondary li.menu-item .sub-menu li.last-child > a {
+  border: 0;
+}
+.nav-secondary li.menu-item .sub-menu li:hover > a {
+  color: #959595;
+  text-decoration: none;
+}
+.nav-secondary li.separator {
   color: #4192ca;
 }
-.nav-secondary .wrap li.menu-item ul {
-  display: none;
-  position: absolute;
-  background: #959595;
-  text-align: center;
-  left: 20px;
-  z-index: 500;
+.nav-secondary li:hover a,
+.nav-secondary li.current-menu-item a,
+.nav-secondary li.current-menu-ancestor a,
+.nav-secondary li:hover a:hover,
+.nav-secondary li.current-menu-item a:hover,
+.nav-secondary li.current-menu-ancestor a:hover {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
 }
-.nav-secondary .wrap li.menu-item ul li {
-  border: 0;
-  display: block;
-  width: auto;
-}
-.nav-secondary .wrap li.menu-item ul li a {
-  border: 0;
-  color: #545454;
-  width: auto;
-  padding: 0 0 0 20px;
-  background-position: left center;
-}
-.nav-secondary .wrap li.menu-item.last-child {
-  border: 0;
-}
-.nav-secondary .wrap li:hover ul {
-  display: block;
+.mainNav > ul > li.first > ul > li.title > ul > li > ul > li {
+  padding: 3px 0;
 }
 /* Footer Navigation
 --------------------------------------------- */
@@ -6829,14 +6854,29 @@ article.entry {
 .entry-tags {
   display: block;
 }
+.entry-header {
+  -webkit-transform: skew(150deg);
+  -moz-transform: skew(150deg);
+  -o-transform: skew(150deg);
+  -ms-transform: skew(150deg);
+  transform: skew(150deg);
+  background-color: #9ca728;
+  display: inline-block;
+  padding: 1em;
+}
 .entry-header .entry-title {
   font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 40px;
   font-size: 4rem;
   line-height: 1.625;
+  -webkit-transform: skew(30deg);
+  -moz-transform: skew(30deg);
+  -o-transform: skew(30deg);
+  -ms-transform: skew(30deg);
+  transform: skew(30deg);
   font-weight: 500;
-  color: #959595;
+  color: #ffffff;
   line-height: 1.25;
   margin: 0;
 }
@@ -7335,9 +7375,6 @@ Site Footer
 .page-template-page-sectioned .site-container .site-inner .content-sidebar-wrap {
   background: transparent;
 }
-.page-template-page-sectioned .site-container .site-inner .content-sidebar-wrap main article .entry-header .entry-title {
-  display: none;
-}
 .sectioned-page-wrapper {
   box-shadow: 0 0 12px 0 #545454;
   position: relative;
@@ -7683,8 +7720,6 @@ Site Footer
   margin-bottom: 0;
 }
 .content-sidebar-wrap {
-  margin: 20px 0;
-  padding: 20px 0;
   background: #ffffff;
 }
 .nav-responsive ul,
