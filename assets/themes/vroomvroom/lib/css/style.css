@@ -6,6 +6,8 @@ HTML5 Reset
   normalize.css v2.1.2 | MIT License | git.io/normalize
 --------------------------------------------- */
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700);
 article,
 aside,
 details,
@@ -5600,7 +5602,7 @@ td.visible-print {
 /* Font Stacks */
 .customsansserif,
 .customsanserif {
-  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -5618,7 +5620,7 @@ td.visible-print {
   background-color: #4192ca;
   border-radius: 6px;
   padding: 6px 24px;
-  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -5717,7 +5719,7 @@ blockquote {
   border: none;
 }
 blockquote p {
-  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -5751,7 +5753,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -5834,7 +5836,7 @@ input[type="submit"],
   background-color: #4192ca;
   border-radius: 6px;
   padding: 6px 24px;
-  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -5861,7 +5863,7 @@ input:hover[type="submit"],
   background-color: #4192ca;
   border-radius: 6px;
   padding: 6px 24px;
-  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -6260,7 +6262,7 @@ Site Header
 --------------------------------------------- */
 .title-area {
   float: left;
-  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -6287,17 +6289,16 @@ Site Header
   color: #333;
 }
 .site-description {
-  font-family: Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif;
-  font-weight: 400;
-  font-size: 24px;
-  font-size: 2.4rem;
-  line-height: 1.625;
-  color: #000000;
+  display: none;
+  /*
+  .customserif(2.4);
+  color: @black;
   font-weight: 300;
   line-height: 1;
   float: left;
   width: 30rem;
   margin: 7rem 0 0 2rem;
+  */
 }
 /* Full width header, no widgets */
 .header-full-width .title-area,
@@ -6310,9 +6311,7 @@ Site Header
   -o-transform: skew(150deg);
   -ms-transform: skew(150deg);
   transform: skew(150deg);
-  padding: 2.5rem;
-  margin: 30px 0 0 40px;
-  margin: 3rem 0 0 4rem;
+  margin: 20px 0 0 40px;
 }
 .header-image .site-title a {
   display: block;
@@ -6322,11 +6321,9 @@ Site Header
   -o-transform: skew(30deg);
   -ms-transform: skew(30deg);
   transform: skew(30deg);
-  min-height: 50px;
-  width: 200px;
-  height: 50px;
-  background: url(../img/logo.png) no-repeat center left;
-  background-size: contain;
+  min-height: 100px;
+  width: 530px;
+  background: url(../img/logo.png) no-repeat center center;
 }
 /* Logo, hide text */
 .header-image .site-header .wrap {
@@ -6419,7 +6416,7 @@ Site Header
 .site-header .widget-area .search-form input[type="submit"],
 .pre-header .widget-area .search-form input[type="submit"] {
   font-family: FontAwesome;
-  background: #9ca728;
+  background: #7eb631;
   border: 0 none;
   border-radius: 2px;
   clip: auto;
@@ -6445,7 +6442,7 @@ Site Navigation
 .genesis-nav-menu {
   clear: both;
   color: #7f7f7f;
-  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -6549,28 +6546,30 @@ Site Navigation
 }
 .nav-primary li.menu-item {
   padding: 0;
-  background-color: #9ca728;
+  background-color: #7eb631;
   margin-left: -5px;
-  border-left: 1px solid #767e1e;
+  border-left: 1px solid #628e26;
   -webkit-transform: skew(150deg);
   -moz-transform: skew(150deg);
   -o-transform: skew(150deg);
   -ms-transform: skew(150deg);
   transform: skew(150deg);
 }
-.nav-primary li.menu-item a {
-  font-family: Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif;
+.nav-primary li.menu-item > a {
+  font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
-  font-size: 21px;
-  font-size: 2.1rem;
+  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 1.625;
-  padding: 1rem 1rem;
+  padding: 1rem 2rem;
   -webkit-transform: skew(30deg);
   -moz-transform: skew(30deg);
   -o-transform: skew(30deg);
   -ms-transform: skew(30deg);
   transform: skew(30deg);
   color: #ffffff;
+  max-width: 200px;
+  line-height: 1;
 }
 .nav-primary li.menu-item .sub-menu {
   background-color: #ffffff;
@@ -6860,12 +6859,12 @@ article.entry {
   -o-transform: skew(150deg);
   -ms-transform: skew(150deg);
   transform: skew(150deg);
-  background-color: #9ca728;
+  background-color: #7eb631;
   display: inline-block;
   padding: 1em;
 }
 .entry-header .entry-title {
-  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 40px;
   font-size: 4rem;
@@ -6881,7 +6880,7 @@ article.entry {
   margin: 0;
 }
 .entry-header .entry-subtitle {
-  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 32px;
   font-size: 3.2rem;
@@ -7089,7 +7088,7 @@ Sidebars
   background-color: #4192ca;
   border-radius: 6px;
   padding: 6px 24px;
-  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -7119,7 +7118,7 @@ Sidebars
   border: 0;
 }
 .sidebar .widget_sp_image .link a i {
-  color: #ff9900;
+  color: #ffad00;
 }
 .sidebar span.fa-stack {
   color: #4192ca;
@@ -7205,7 +7204,7 @@ Footer Widgets
   background-color: #4192ca;
   border-radius: 6px;
   padding: 6px 24px;
-  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -7311,7 +7310,7 @@ Site Footer
 .footer-phone {
   background-color: #000000;
   color: #ffffff;
-  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 10px;
   font-size: 1rem;
@@ -7336,7 +7335,7 @@ Site Footer
 .footer-phone .wrap .social a,
 .site-footer .wrap .footer-menu a,
 .footer-phone .wrap .footer-menu a {
-  color: #9ca728;
+  color: #7eb631;
 }
 .site-footer .wrap .social a:hover,
 .footer-phone .wrap .social a:hover,
@@ -7358,7 +7357,7 @@ Site Footer
 }
 .site-footer .wrap .backtotop a,
 .footer-phone .wrap .backtotop a {
-  color: #9ca728;
+  color: #7eb631;
   font-size: 2em;
   line-height: 1;
 }
@@ -7387,7 +7386,7 @@ Site Footer
 }
 .sectioned-page-wrapper .section .section-subtitle,
 .sectioned-page-wrapper .section h4 {
-  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-size: 1.8rem;
@@ -7401,7 +7400,7 @@ Site Footer
   margin-bottom: 2rem;
 }
 .sectioned-page-wrapper .section h3 {
-  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-size: 1.8rem;
@@ -7412,7 +7411,7 @@ Site Footer
   margin-bottom: 0.5em;
 }
 .sectioned-page-wrapper .section .section-title h3 {
-  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 24px;
   font-size: 2.4rem;
@@ -7709,7 +7708,7 @@ Site Footer
   z-index: 300;
 }
 .page-title-area .entry-title {
-  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 36px;
   font-size: 3.6rem;

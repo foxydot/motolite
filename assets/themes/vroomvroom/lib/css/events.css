@@ -1,10 +1,12 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700);
 /* Import Fonts
 ------------------------------------------------------------ */
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700);
 /* Font Stacks */
 .customsansserif,
 .customsanserif {
-  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -22,7 +24,7 @@
   background-color: #4192ca;
   border-radius: 6px;
   padding: 6px 24px;
-  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -57,7 +59,7 @@
   border-radius: 0;
 }
 .post-type-archive-event .panel-group .panel .panel-heading .panel-title a {
-  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 22px;
   font-size: 2.2rem;
@@ -91,7 +93,7 @@
   text-align: center;
 }
 .post-type-archive-event .panel-group .panel .panel-collapse .panel-body article .entry-content .event-date .day {
-  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 36px;
   font-size: 3.6rem;
@@ -99,7 +101,7 @@
   line-height: 1;
 }
 .post-type-archive-event .panel-group .panel .panel-collapse .panel-body article .entry-content .event-date .month {
-  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 14px;
   font-size: 1.4rem;
@@ -108,7 +110,7 @@
   letter-spacing: 0.25rem;
 }
 .post-type-archive-event .panel-group .panel .panel-collapse .panel-body article .entry-content .entry-title {
-  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-size: 1.8rem;
