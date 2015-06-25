@@ -104,3 +104,6 @@ add_action('after_404','msdlab_sitemap');
 /*** Blog Header ***/
 //add_action('genesis_before_loop','msd_add_blog_header');
 add_action('wp_head', 'msdlab_custom_hooks_management');
+
+/** Remove Edit Link */
+add_filter( 'edit_post_link', '__return_false' );

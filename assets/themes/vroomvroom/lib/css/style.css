@@ -6502,7 +6502,7 @@ Site Navigation
   -o-transition: opacity 0.4s ease-in-out;
   transition: opacity 0.4s ease-in-out;
   width: 200px;
-  z-index: 99;
+  z-index: 999;
 }
 .genesis-nav-menu .sub-menu a {
   background: #ffffff;
@@ -6563,8 +6563,10 @@ Site Navigation
 --------------------------------------------- */
 .nav-primary {
   display: inline-block;
+  position: relative;
+  z-index: 50;
 }
-.nav-primary li.menu-item {
+.nav-primary .menu > li.menu-item {
   padding: 0;
   background-color: #7eb631;
   border-left: 1px solid #628e26;
@@ -6576,10 +6578,10 @@ Site Navigation
   -ms-transform: skew(150deg);
   transform: skew(150deg);
 }
-.nav-primary li.menu-item.orange {
+.nav-primary .menu > li.menu-item.orange {
   background-color: #ffad00;
 }
-.nav-primary li.menu-item > a {
+.nav-primary .menu > li.menu-item > a {
   font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -6593,32 +6595,40 @@ Site Navigation
   transform: skew(30deg);
   color: #ffffff;
   line-height: 1;
+  min-height: 3em;
 }
-.nav-primary li.menu-item .sub-menu {
-  background-color: #ffffff;
-  margin-top: 0px;
+.nav-primary .menu > li.menu-item .sub-menu {
+  -webkit-transform: skew(30deg);
+  -moz-transform: skew(30deg);
+  -o-transform: skew(30deg);
+  -ms-transform: skew(30deg);
+  transform: skew(30deg);
+  left: 10px;
+  background-color: #7eb631;
+  margin-top: 2px;
+  left: 12px;
+  border-top: 1px solid #628e26;
   -webkit-box-shadow: 0 10px 10px rgba(20, 20, 20, 0.5);
   box-shadow: 0 10px 10px rgba(20, 20, 20, 0.5);
   -webkit-box-shadow: 0px 10px 10px rgba(20, 20, 20, 0.5);
   -moz-box-shadow: 0px 10px 10px rgba(20, 20, 20, 0.5);
   box-shadow: 0px 10px 10px rgba(20, 20, 20, 0.5);
 }
-.nav-primary li.menu-item .sub-menu li.menu-item {
-  background-color: #ffffff;
+.nav-primary .menu > li.menu-item .sub-menu li.menu-item {
   padding: 0 2rem;
   width: 100%;
 }
-.nav-primary li.menu-item .sub-menu li.menu-item a {
+.nav-primary .menu > li.menu-item .sub-menu li.menu-item a {
   background-color: transparent;
   border: 0;
-  color: #7eb631;
+  color: #ffffff;
   padding: 1rem 0;
   width: 100%;
 }
-.nav-primary li.menu-item .sub-menu li.last-child > a {
+.nav-primary .menu > li.menu-item .sub-menu li.last-child > a {
   border: 0;
 }
-.nav-primary li.menu-item .sub-menu li:hover > a {
+.nav-primary .menu > li.menu-item .sub-menu li:hover > a {
   color: #959595;
   text-decoration: none;
 }
@@ -6889,22 +6899,23 @@ article.entry {
   transform: skew(150deg);
   background-color: #7eb631;
   display: inline-block;
-  padding: 1em;
+  padding: 0.5em 4em;
 }
 .entry-header .entry-title {
   font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
-  font-size: 40px;
-  font-size: 4rem;
+  font-size: 35px;
+  font-size: 3.5rem;
   line-height: 1.625;
   -webkit-transform: skew(30deg);
   -moz-transform: skew(30deg);
   -o-transform: skew(30deg);
   -ms-transform: skew(30deg);
   transform: skew(30deg);
-  font-weight: 500;
+  font-weight: 300;
+  text-transform: uppercase;
   color: #ffffff;
-  line-height: 1.25;
+  line-height: 1;
   margin: 0;
 }
 .entry-header .entry-subtitle {
@@ -7462,6 +7473,9 @@ Site Footer
 }
 .sectioned-page-wrapper .section .section-body .wrap {
   padding: 2rem 0;
+}
+.sectioned-page-wrapper .section .section-body .wrap .section-content {
+  line-height: 1.375;
 }
 .sectioned-page-wrapper .section .section-body:after {
   content: ".";

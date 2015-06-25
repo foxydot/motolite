@@ -42,7 +42,7 @@ Site Navigation
   -o-transition:      opacity .4s ease-in-out;
   transition:         opacity .4s ease-in-out;
   width: 200px;
-  z-index: 99;
+  z-index: 999;
   a {
     background: @white;
     border: 1px solid #eee;
@@ -117,7 +117,9 @@ Site Navigation
 
 .nav-primary {
   display: inline-block;
-  li.menu-item{
+  position: relative;
+  z-index: 50;
+  .menu>li.menu-item{
     padding: 0;
     background-color: @green;
     border-left: 1px solid darken(@green, 10%);
@@ -133,19 +135,23 @@ Site Navigation
       .skew(30);
       color: @white;
       line-height: 1;
+      min-height: 3em;
     }
     .sub-menu{
-      background-color: @white;
-      margin-top: 0px;
+      .skew(30);
+      left: 10px;
+      background-color: @green;
+      margin-top: 2px;
+      left: 12px;
+      border-top: 1px solid darken(@green, 10%);
       .box-shadow(0 10px 10px rgba(20,20,20,0.5));
       li.menu-item{
-        background-color: @white;
         padding: 0 2rem;
         width: 100%;
         a{
           background-color: transparent;
           border: 0;
-          color: @green;
+          color: @white;
           padding: 1rem 0;
           width: 100%;
         }
