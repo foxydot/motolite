@@ -32,7 +32,17 @@ Footer Widgets
     margin-bottom: 0.6rem;
     word-wrap: break-word;
   }
-  
+  .widget.msd-connected{
+    .widget-title{
+      text-align: center;
+    }
+    .wrap{
+      .row;
+      background: url(../img/block-logo.png) no-repeat 10px 10px;
+      padding-left: 110px;
+      background-size: 90px 90px;
+    }
+  }
   .connected-text{
     text-align: center;
     max-width: 75%;
@@ -87,9 +97,9 @@ Footer Widgets
         background: none;
         border: 1px solid @green;
         margin: 10px;
-        height: 50px;
-        width: 60px;
-        font-size: 3rem;
+        height: 36px;
+        width: 40px;
+        font-size: 2rem;
         line-height: 1.6;
         color: @green;
         .skew(150);
@@ -110,6 +120,17 @@ Footer Widgets
   }
   .search-form input:focus {
     border: 0 solid #ddd;
+  }
+  .widget.tribe-events-list-widget{
+    .widget-title{
+      &:after{
+        .fontawesome;
+        color: @green;
+        font-weight: 300;
+        margin-left: 1em;
+        content: '\f073';
+      }
+    }
   }
   
 }

@@ -6240,7 +6240,10 @@ div.gform_wrapper form li {
 div.gform_wrapper .gform_footer input[type="submit"] {
   font-size: 14px;
   font-size: 1.4rem;
-  background-color: #7eb631;
+  background-color: transparent;
+  border: 0;
+  width: auto;
+  padding-right: 63px;
 }
 /* Jetpack
 --------------------------------------------- */
@@ -7175,6 +7178,36 @@ Footer Widgets
   margin-bottom: 0.6rem;
   word-wrap: break-word;
 }
+.footer-widgets .widget.msd-connected .widget-title {
+  text-align: center;
+}
+.footer-widgets .widget.msd-connected .wrap {
+  margin-left: -15px;
+  margin-right: -15px;
+  background: url(../img/block-logo.png) no-repeat 10px 10px;
+  padding-left: 110px;
+  background-size: 90px 90px;
+}
+.footer-widgets .widget.msd-connected .wrap:before,
+.footer-widgets .widget.msd-connected .wrap:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.footer-widgets .widget.msd-connected .wrap:after {
+  clear: both;
+}
+.footer-widgets .widget.msd-connected .wrap:before,
+.footer-widgets .widget.msd-connected .wrap:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.footer-widgets .widget.msd-connected .wrap:after {
+  clear: both;
+}
 .footer-widgets .connected-text {
   text-align: center;
   max-width: 75%;
@@ -7226,9 +7259,9 @@ Footer Widgets
   background: none;
   border: 1px solid #7eb631;
   margin: 10px;
-  height: 50px;
-  width: 60px;
-  font-size: 3rem;
+  height: 36px;
+  width: 40px;
+  font-size: 2rem;
   line-height: 1.6;
   color: #7eb631;
   -webkit-transform: skew(150deg);
@@ -7255,6 +7288,13 @@ Footer Widgets
 }
 .footer-widgets .search-form input:focus {
   border: 0 solid #ddd;
+}
+.footer-widgets .widget.tribe-events-list-widget .widget-title:after {
+  font-family: FontAwesome;
+  color: #7eb631;
+  font-weight: 300;
+  margin-left: 1em;
+  content: '\f073';
 }
 /*
 Site Footer
