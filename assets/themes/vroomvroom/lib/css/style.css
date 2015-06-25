@@ -5,7 +5,7 @@ HTML5 Reset
 /* Baseline Normalize
   normalize.css v2.1.2 | MIT License | git.io/normalize
 --------------------------------------------- */
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700);
 article,
@@ -5602,7 +5602,7 @@ td.visible-print {
 /* Font Stacks */
 .customsansserif,
 .customsanserif {
-  font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -5667,7 +5667,7 @@ html {
 body {
   background-color: #ffffff;
   color: #545454;
-  font-family: "Raleway", "Helvetica Neue", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -5732,7 +5732,7 @@ blockquote {
   border: none;
 }
 blockquote p {
-  font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -6081,7 +6081,7 @@ img.alignright,
   padding: 4rem;
 }
 .author-box-title {
-  font-family: "Raleway", "Helvetica Neue", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 16px;
   font-size: 1.6rem;
@@ -6715,9 +6715,14 @@ Site Navigation
 /* Footer Navigation
 --------------------------------------------- */
 .nav-footer {
-  padding: 0.5rem 0;
+  position: relative;
+  top: 5px;
   color: #ffffff;
+  font-family: "Open Sans", "Helvetica Neue", "Trebuchet MS", Calibri, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
   font-size: 1rem;
+  line-height: 1.625;
 }
 .nav-footer li.menu-item {
   width: auto;
@@ -7094,7 +7099,7 @@ Sidebars
   border-radius: 0px;
 }
 .sidebar .widget .widget-title {
-  font-family: "Raleway", "Helvetica Neue", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 24px;
   font-size: 2.4rem;
@@ -7339,11 +7344,12 @@ Site Footer
 .footer-phone {
   background-color: #000000;
   color: #ffffff;
-  font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 10px;
   font-size: 1rem;
   line-height: 1.625;
+  padding: 1rem 0;
   text-align: center;
 }
 .site-footer p,
@@ -7389,6 +7395,10 @@ Site Footer
   color: #7eb631;
   font-size: 2em;
   line-height: 1;
+}
+.footer-phone {
+  background-color: transparent;
+  color: #7f7f7f;
 }
 .page-template-page-sectioned .site-container {
   background: #f2f3f5;
