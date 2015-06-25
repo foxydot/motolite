@@ -9,7 +9,7 @@ Site Navigation
   line-height: 1.5;
   width: 100%;
   .menu-item,.separator {
-    display: inline-block;
+    display: table-cell;
     text-align: left;
     a {
       border: none;
@@ -120,15 +120,18 @@ Site Navigation
   li.menu-item{
     padding: 0;
     background-color: @green;
-    margin-left: -5px;
     border-left: 1px solid darken(@green, 10%);
+    max-width: 10em;
+    min-height: 3em;
     .skew(150);
+    &.orange{
+      background-color: @orange;
+    }
     >a{
       .customheader(1.8);
       padding: 1rem 2rem;
       .skew(30);
       color: @white;
-      max-width: 200px;
       line-height: 1;
     }
     .sub-menu{
@@ -142,7 +145,7 @@ Site Navigation
         a{
           background-color: transparent;
           border: 0;
-          color: @dkblue;
+          color: @green;
           padding: 1rem 0;
           width: 100%;
         }
@@ -157,7 +160,7 @@ Site Navigation
     }
   }
   li.separator {
-    color: @blue;
+    color: @green;
   }
   li:hover, li.current-menu-item, li.current-menu-ancestor{
     a, a:hover{
@@ -186,8 +189,8 @@ Site Navigation
     border-left: 1px solid lighten(@black, 30%);
     .skew(30);
     a{
-      .customserif(1.8);
-      padding: 1rem 1rem;
+      .customheader(1.4);
+      padding: 1rem 2rem;
       .skew(150);
       color: @white;
     }

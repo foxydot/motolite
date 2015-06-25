@@ -206,9 +206,8 @@
 
 
 /* Buttons */
-.button(@color:@blue) {
+.button(@color:@green) {
   background-color: @color;
-  border-radius: 6px;
   padding: 6px 24px;
   .customsanserif;
   color: #FFFFFF;
@@ -221,7 +220,7 @@
 }
 
 
-.button-hover(@color:@blue) {
+.button-hover(@color:@green) {
   .button(@color);
   background-color: darken(@color,10%);
 }
@@ -231,6 +230,13 @@
   .button-hover();
 }
 
+.skewit{
+  .skew(150);
+}
+
+.unskewit{
+  .skew(30);
+}
 /* Clears */
 .msd-clearfix {
     content: ".";

@@ -4,8 +4,12 @@ jQuery(document).ready(function($) {
     $('*:nth-child(even)').addClass('even');
     $('*:nth-child(odd)').addClass('odd');
 	
-	var numwidgets = $('#footer-widgets div.widget').length;
-	$('#footer-widgets').addClass('cols-'+numwidgets);
+    var numwidgets = $('.footer-widgets section.widget').length;
+    $('.footer-widgets').addClass('row').addClass('cols-'+numwidgets);
+    var cols = 12/numwidgets;
+    $('.footer-widgets section.widget').addClass('col-sm-'+cols);
+    $('.footer-widgets section.widget').addClass('col-xs-12');
+    
 	$.each(['show', 'hide'], function (i, ev) {
         var el = $.fn[ev];
         $.fn[ev] = function () {
