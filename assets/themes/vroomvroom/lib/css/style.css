@@ -7201,7 +7201,7 @@ Footer Widgets
   margin-left: -15px;
   margin-right: -15px;
   background: url(../img/block-logo.png) no-repeat 10px 10px;
-  padding-left: 110px;
+  padding-left: 130px;
   background-size: 90px 90px;
 }
 .footer-widgets .widget.msd-connected .wrap:before,
@@ -7274,7 +7274,7 @@ Footer Widgets
 .footer-widgets .connected-social .social-media a.fa {
   background: none;
   border: 1px solid #7eb631;
-  margin: 10px;
+  margin: 10px 6px;
   height: 36px;
   width: 40px;
   font-size: 2rem;
