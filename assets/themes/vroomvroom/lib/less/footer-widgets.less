@@ -131,6 +131,40 @@ Footer Widgets
         content: '\f073';
       }
     }
+    ol{
+      li{
+        font-size: 14px;
+        font-size: 1.4rem;
+        padding-bottom: 0.5em;
+        margin-bottom: 0.5em;
+        border-bottom: 1px solid @vltgrey;
+        .date-label{
+          .customheader(1.4);
+          background: @green;
+          color: @white;
+          width: auto;
+          padding: 0.2em 1em;
+          display: table-cell;
+        }
+        .description{
+          color: @medgrey;
+        }
+        .duration{
+          font-weight: 400;
+          margin: 0;
+        }
+        .event-title{
+          font-weight: 700;
+        }
+        &.last-child{
+          border: 0;
+        }
+      }
+    }
+    .tribe-events-widget-link{
+      text-align: right; 
+      font-weight: 400;
+    }
   }
   
 }

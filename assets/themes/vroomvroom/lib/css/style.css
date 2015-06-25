@@ -7296,6 +7296,42 @@ Footer Widgets
   margin-left: 1em;
   content: '\f073';
 }
+.footer-widgets .widget.tribe-events-list-widget ol li {
+  font-size: 14px;
+  font-size: 1.4rem;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #b7b7b7;
+}
+.footer-widgets .widget.tribe-events-list-widget ol li .date-label {
+  font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 1.625;
+  background: #7eb631;
+  color: #ffffff;
+  width: auto;
+  padding: 0.2em 1em;
+  display: table-cell;
+}
+.footer-widgets .widget.tribe-events-list-widget ol li .description {
+  color: #7f7f7f;
+}
+.footer-widgets .widget.tribe-events-list-widget ol li .duration {
+  font-weight: 400;
+  margin: 0;
+}
+.footer-widgets .widget.tribe-events-list-widget ol li .event-title {
+  font-weight: 700;
+}
+.footer-widgets .widget.tribe-events-list-widget ol li.last-child {
+  border: 0;
+}
+.footer-widgets .widget.tribe-events-list-widget .tribe-events-widget-link {
+  text-align: right;
+  font-weight: 400;
+}
 /*
 Site Footer
 ---------------------------------------------------------------------------------------------------- */
