@@ -6269,6 +6269,7 @@ img#wpstats {
 Site Header
 ---------------------------------------------------------------------------------------------------- */
 .site-header {
+  background: url(../img/bkg-hdr-default.jpg) center center no-repeat #757c6b;
   min-height: 450px;
   background-position: top center;
   background-repeat: no-repeat;
@@ -7305,21 +7306,28 @@ Footer Widgets
 .footer-widgets .search-form input:focus {
   border: 0 solid #ddd;
 }
-.footer-widgets .widget.tribe-events-list-widget .widget-title:after {
+.widget.tribe-events-list-widget .widget-title:after,
+.tribe-events-list .widget-title:after {
   font-family: FontAwesome;
   color: #7eb631;
   font-weight: 300;
   margin-left: 1em;
   content: '\f073';
 }
-.footer-widgets .widget.tribe-events-list-widget ol li {
+.widget.tribe-events-list-widget ol,
+.tribe-events-list ol {
+  list-style: none outside none;
+}
+.widget.tribe-events-list-widget ol li,
+.tribe-events-list ol li {
   font-size: 14px;
   font-size: 1.4rem;
   padding-bottom: 0.5em;
   margin-bottom: 0.5em;
   border-bottom: 1px solid #b7b7b7;
 }
-.footer-widgets .widget.tribe-events-list-widget ol li .date-label {
+.widget.tribe-events-list-widget ol li .date-label,
+.tribe-events-list ol li .date-label {
   font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -7331,20 +7339,25 @@ Footer Widgets
   padding: 0.2em 1em;
   display: table-cell;
 }
-.footer-widgets .widget.tribe-events-list-widget ol li .description {
+.widget.tribe-events-list-widget ol li .description,
+.tribe-events-list ol li .description {
   color: #7f7f7f;
 }
-.footer-widgets .widget.tribe-events-list-widget ol li .duration {
+.widget.tribe-events-list-widget ol li .duration,
+.tribe-events-list ol li .duration {
   font-weight: 400;
   margin: 0;
 }
-.footer-widgets .widget.tribe-events-list-widget ol li .event-title {
+.widget.tribe-events-list-widget ol li .event-title,
+.tribe-events-list ol li .event-title {
   font-weight: 700;
 }
-.footer-widgets .widget.tribe-events-list-widget ol li.last-child {
+.widget.tribe-events-list-widget ol li.last-child,
+.tribe-events-list ol li.last-child {
   border: 0;
 }
-.footer-widgets .widget.tribe-events-list-widget .tribe-events-widget-link {
+.widget.tribe-events-list-widget .tribe-events-widget-link,
+.tribe-events-list .tribe-events-widget-link {
   text-align: right;
   font-weight: 400;
 }

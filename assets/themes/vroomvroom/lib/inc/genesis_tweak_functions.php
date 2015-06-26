@@ -118,7 +118,9 @@ function msdlab_header_right(){
 function msdlab_header_attr( $attributes ){
     global $post;
     if(is_page()){
-        $attributes['style'] .= 'background-image: url('.msdlab_get_thumbnail_url($post->ID, 'full').');';
+        $url = msdlab_get_thumbnail_url($post->ID, 'full');
+        if($url != '')
+            $attributes['style'] .= 'background-image: url('.$url.');';
     }
     return $attributes;
 }
