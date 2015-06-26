@@ -118,7 +118,6 @@ Site Navigation
 .nav-primary {
   display: block;
   position: relative;
-  z-index: 50;
   .menu>li.menu-item{
     padding: 0;
     background-color: @green;
@@ -175,6 +174,9 @@ Site Navigation
       }
   }
   li.last-child{
+  }
+  &:hover{
+    z-index: 50;
   }
 }
 .mainNav>ul>li.first>ul>li.title>ul>li>ul>li {

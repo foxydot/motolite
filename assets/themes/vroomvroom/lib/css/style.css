@@ -6563,7 +6563,6 @@ Site Navigation
 .nav-primary {
   display: block;
   position: relative;
-  z-index: 50;
 }
 .nav-primary .menu > li.menu-item {
   padding: 0;
@@ -6642,6 +6641,9 @@ Site Navigation
 .nav-primary li.current-menu-ancestor a:hover {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.9);
+}
+.nav-primary:hover {
+  z-index: 50;
 }
 .mainNav > ul > li.first > ul > li.title > ul > li > ul > li {
   padding: 3px 0;
