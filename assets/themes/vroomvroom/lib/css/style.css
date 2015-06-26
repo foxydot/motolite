@@ -7846,6 +7846,15 @@ Site Footer
 .sectioned-page-wrapper .section.testimonials-section .section-body .msdlab_testimonial_gallery .carousel .carousel-inner .attribution {
   font-weight: 700;
 }
+.badge-icon {
+  background-image: url(../img/badge-icon.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  min-height: 20px;
+  min-width: 20px;
+  display: inline-block;
+}
 .nav-responsive ul,
 .nav-responsive li,
 .nav-responsive li a {

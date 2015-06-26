@@ -196,6 +196,7 @@ if (!class_exists('MSDTestimonialCPT')) {
             $ret = false;
             foreach($testimonials AS $testimonial){
                 $testimonial_info->the_meta($testimonial->ID);
+                $badge = has_term( 'law-enforcement', 'testimonial_type', $testimonial->ID )?' <i class="badge-icon"></i>':'';
                 $quote = apply_filters('the_content',$testimonial_info->get_the_value('quote'));
                 if($length){
                     $quote = self::msd_trim_quote($quote,$length,get_the_permalink($testimonial->ID));
@@ -207,7 +208,7 @@ if (!class_exists('MSDTestimonialCPT')) {
                 $bootstrap = $slideshow?'':'col-md-'. 12/$columns .' col-xs-12 ';
                 $testimonial_array[] .= '<div class="'.$bootstrap.'item-wrapper">
                 <div class="quote">'.$quote.'</div>
-                <div class="attribution">'.$name.$position.$organization.$location.'</div>
+                <div class="attribution">'.$name.$position.$organization.$location.$badge.'</div>
                 </div>';
             }
             if($slideshow){
