@@ -6561,7 +6561,7 @@ Site Navigation
 /* Primary Navigation
 --------------------------------------------- */
 .nav-primary {
-  display: inline-block;
+  display: block;
   position: relative;
   z-index: 50;
 }
@@ -6649,7 +6649,7 @@ Site Navigation
 /* Secondary Navigation
 --------------------------------------------- */
 .nav-secondary {
-  display: inline-block;
+  display: block;
   margin-top: 10px;
   margin-top: 1rem;
 }
@@ -7775,6 +7775,70 @@ Site Footer
 }
 .content-sidebar-wrap {
   background: #ffffff;
+}
+.sectioned-page-wrapper .section.section-motorcycle-riding-names .section-title h3 {
+  font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
+  font-weight: 400;
+  font-size: 45px;
+  font-size: 4.5rem;
+  line-height: 1.625;
+  color: #545454;
+  line-height: 1;
+}
+.sectioned-page-wrapper .section.testimonials-section {
+  background: url(../img/bkg-testimonial.jpg) no-repeat center center #586432;
+  color: #ffffff;
+}
+.sectioned-page-wrapper .section.testimonials-section .section-title {
+  display: none;
+}
+.sectioned-page-wrapper .section.testimonials-section .section-body .msdlab_testimonial_gallery .carousel {
+  padding-top: 3rem;
+}
+.sectioned-page-wrapper .section.testimonials-section .section-body .msdlab_testimonial_gallery .carousel .testimonial-title {
+  background: #7eb631;
+  color: #ffffff;
+  display: table-cell;
+  position: relative;
+  width: auto;
+  padding: 0 1em;
+  font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+  font-size: 3.5rem;
+  line-height: 1.625;
+  line-height: 1;
+  text-transform: uppercase;
+  z-index: 10;
+}
+.sectioned-page-wrapper .section.testimonials-section .section-body .msdlab_testimonial_gallery .carousel .control-wrapper {
+  background: #ffffff;
+  color: #7eb631;
+  display: table-cell;
+  position: relative;
+  top: -1em;
+  left: -3em;
+  width: auto;
+  padding: 0 4em;
+  line-height: 1;
+  min-width: 40px;
+}
+.sectioned-page-wrapper .section.testimonials-section .section-body .msdlab_testimonial_gallery .carousel .control-wrapper .carousel-control {
+  color: #7eb631;
+  width: 20px;
+  position: absolute;
+  top: -1em;
+}
+.sectioned-page-wrapper .section.testimonials-section .section-body .msdlab_testimonial_gallery .carousel .control-wrapper .carousel-control.left,
+.sectioned-page-wrapper .section.testimonials-section .section-body .msdlab_testimonial_gallery .carousel .control-wrapper .carousel-control.right {
+  background: 0;
+  float: none;
+}
+.sectioned-page-wrapper .section.testimonials-section .section-body .msdlab_testimonial_gallery .carousel .control-wrapper .carousel-control.left {
+  right: 0;
+}
+.sectioned-page-wrapper .section.testimonials-section .section-body .msdlab_testimonial_gallery .carousel .control-wrapper .carousel-control.right {
+  left: 0;
 }
 .nav-responsive ul,
 .nav-responsive li,

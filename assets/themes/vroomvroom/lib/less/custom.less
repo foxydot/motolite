@@ -80,5 +80,72 @@
   background: @white;
 }
 
-
+.sectioned-page-wrapper{
+  .section.section-motorcycle-riding-names{
+    .section-title{
+      h3{
+        .customheader(4.5);
+        color: @dkgrey;
+        line-height: 1;
+      }
+    }
+  }
+  .section.testimonials-section{
+    background: url(../img/bkg-testimonial.jpg) no-repeat center center #586432;
+    color:@white;
+    .section-title{
+      display: none;
+    }
+    .section-body{
+      .msdlab_testimonial_gallery{
+        .carousel{
+          padding-top: 3rem;
+          .testimonial-title{
+            background: @green;
+            color: @white;
+            display: table-cell;
+            position: relative;
+            width: auto;
+            padding: 0 1em;
+            .customheader(3.5);
+            line-height: 1;
+            text-transform: uppercase;
+            z-index: 10;
+          }
+          .control-wrapper{
+            background: @white;
+            color: @green;
+            display: table-cell;
+            position: relative;
+            top: -1em;
+            left: -3em;
+            width: auto;
+            padding: 0 4em;
+            line-height: 1;
+            min-width: 40px;
+            .carousel-control{
+              color: @green;
+              width: 20px;
+              position:absolute;
+              top: -1em;
+              &.left,&.right{
+                background: 0;
+                float: none;
+              }
+              &.left{
+                right: 0;
+              }
+              &.right{
+                left: 0;
+              }
+            }
+          }
+          .carousel-inner{
+            
+          }
+        }
+      }
+    }
+  }
+}
 

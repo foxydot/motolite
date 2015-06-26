@@ -188,10 +188,11 @@ if (!class_exists('MSDTestimonialCPT')) {
             global $testimonial_info;
             $args = array(
                 'post_type' => $this->cpt,
-                'orderby' => rand,
-                'posts_per_page' => $rows * $columns,
+                'orderby' => rand
             );
+            $args['posts_per_page'] = $slideshow?10:$rows * $columns;
             $testimonials = get_posts($args);
+            $testimonial_array = array();
             $ret = false;
             foreach($testimonials AS $testimonial){
                 $testimonial_info->the_meta($testimonial->ID);
@@ -203,10 +204,32 @@ if (!class_exists('MSDTestimonialCPT')) {
                 $position = $testimonial_info->get_the_value('position')!=''?'<span class="position">'.$testimonial_info->get_the_value('position').',</span> ':'';
                 $organization = $testimonial_info->get_the_value('organization')!=''?'<span class="organization">'.$testimonial_info->get_the_value('organization').'</span> ':'';
                 $location = $testimonial_info->get_the_value('location')!=''?'<span class="location">'.$testimonial_info->get_the_value('location').'</span> ':'';
-                $ret .= '<div class="col-md-'. 12/$columns .' col-xs-12 item-wrapper">
+                $bootstrap = $slideshow?'':'col-md-'. 12/$columns .' col-xs-12 ';
+                $testimonial_array[] .= '<div class="'.$bootstrap.'item-wrapper">
                 <div class="quote">'.$quote.'</div>
                 <div class="attribution">'.$name.$position.$organization.$location.'</div>
                 </div>';
+            }
+            if($slideshow){
+                foreach($testimonial_array AS $k=>$t){
+                    $active = $k=='0'?' active':'';
+                    $ret .= '<div class="item'.$active.'">'.$t.'</div>';
+                }
+                $controls = '
+                <div class="testimonial-title skewit"><div class="unskewit">Testimonial</div></div>
+  <div class="control-wrapper skewit"><div class="unskewit">
+  <a class="left carousel-control" href="#testimonial-carousel" role="button" data-slide="prev">
+    <span class="fa fa-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#testimonial-carousel" role="button" data-slide="next">
+    <span class="fa fa-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  </div></div>';
+                $ret = sprintf('<div id="testimonial-carousel" class="carousel slide" data-ride="carousel">'.$controls.'<div class="carousel-inner" role="listbox">%s</div></div>',$ret);
+            } else {
+                $ret .= implode('',$testimonial_array);
             }
             if($link){
                 $link_text = is_string($link)?$link:'Read More Testimonials';
