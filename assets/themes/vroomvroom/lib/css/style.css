@@ -7786,7 +7786,7 @@ Site Footer
   line-height: 1;
 }
 .sectioned-page-wrapper .section.testimonials-section {
-  background: url(../img/bkg-testimonial.jpg) no-repeat center center #586432;
+  background: url(../img/bkg-testimonial.jpg) no-repeat center top #586432;
   color: #ffffff;
 }
 .sectioned-page-wrapper .section.testimonials-section .section-title {
