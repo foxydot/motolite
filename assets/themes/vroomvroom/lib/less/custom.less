@@ -120,14 +120,14 @@
             top: -1em;
             left: -3em;
             width: auto;
-            padding: 0 4em;
+            padding: 0 3em 0 4em;
             line-height: 1;
             min-width: 40px;
             .carousel-control{
               color: @green;
               width: 20px;
-              position:absolute;
-              top: -1em;
+              position:relative;
+              top:-0.2em;
               &.left,&.right{
                 background: 0;
                 float: none;
@@ -141,7 +141,12 @@
             }
           }
           .carousel-inner{
-            
+            .quote{
+              padding: 1rem 0;
+            }
+            .attribution{
+              font-weight: 700;
+            }
           }
         }
       }

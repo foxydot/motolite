@@ -7819,15 +7819,15 @@ Site Footer
   top: -1em;
   left: -3em;
   width: auto;
-  padding: 0 4em;
+  padding: 0 3em 0 4em;
   line-height: 1;
   min-width: 40px;
 }
 .sectioned-page-wrapper .section.testimonials-section .section-body .msdlab_testimonial_gallery .carousel .control-wrapper .carousel-control {
   color: #7eb631;
   width: 20px;
-  position: absolute;
-  top: -1em;
+  position: relative;
+  top: -0.2em;
 }
 .sectioned-page-wrapper .section.testimonials-section .section-body .msdlab_testimonial_gallery .carousel .control-wrapper .carousel-control.left,
 .sectioned-page-wrapper .section.testimonials-section .section-body .msdlab_testimonial_gallery .carousel .control-wrapper .carousel-control.right {
@@ -7839,6 +7839,12 @@ Site Footer
 }
 .sectioned-page-wrapper .section.testimonials-section .section-body .msdlab_testimonial_gallery .carousel .control-wrapper .carousel-control.right {
   left: 0;
+}
+.sectioned-page-wrapper .section.testimonials-section .section-body .msdlab_testimonial_gallery .carousel .carousel-inner .quote {
+  padding: 1rem 0;
+}
+.sectioned-page-wrapper .section.testimonials-section .section-body .msdlab_testimonial_gallery .carousel .carousel-inner .attribution {
+  font-weight: 700;
 }
 .nav-responsive ul,
 .nav-responsive li,
