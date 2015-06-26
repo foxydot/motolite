@@ -5,7 +5,8 @@ jQuery(document).ready(function($) {
     $('*:nth-child(odd)').addClass('odd');
 	
     var numwidgets = $('.footer-widgets section.widget').length;
-    $('.footer-widgets').addClass('row').addClass('cols-'+numwidgets);
+    $('.footer-widgets').addClass('cols-'+numwidgets);
+    $('.footer-widgets widget-area').addClass('row');
     var cols = 12/numwidgets;
     $('.footer-widgets section.widget').addClass('col-sm-'+cols);
     $('.footer-widgets section.widget').addClass('col-xs-12');
