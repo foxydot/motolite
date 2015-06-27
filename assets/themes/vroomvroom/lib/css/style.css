@@ -7356,6 +7356,10 @@ Footer Widgets
 .tribe-events-list ol li.last-child {
   border: 0;
 }
+.widget.tribe-events-list-widget ol li.col-md-4,
+.tribe-events-list ol li.col-md-4 {
+  padding: 0 1em;
+}
 .widget.tribe-events-list-widget .tribe-events-widget-link,
 .tribe-events-list .tribe-events-widget-link {
   text-align: right;
@@ -7869,6 +7873,17 @@ Site Footer
   min-height: 20px;
   min-width: 20px;
   display: inline-block;
+}
+#tribe-events .tribe-events-button,
+#tribe-events .tribe-events-button:hover,
+#tribe_events_filters_wrapper input[type="submit"],
+.tribe-events-button,
+.tribe-events-button.tribe-active:hover,
+.tribe-events-button.tribe-inactive,
+.tribe-events-button:hover,
+.tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"],
+.tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"] > a {
+  background-color: #7eb631;
 }
 .nav-responsive ul,
 .nav-responsive li,
