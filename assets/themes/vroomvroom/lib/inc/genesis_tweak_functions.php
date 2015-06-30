@@ -580,7 +580,7 @@ function msdlab_do_social_footer(){
 function msdlab_do_social_phone_footer(){
     global $msd_social;
     global $wp_filter;
-    //ts_var( $wp_filter['msdlab_title_area'] );
+    //ts_var( $wp_filter['genesis_after_header'] );
     
     if(has_nav_menu('footer_menu')){$footer_menu .= wp_nav_menu( array( 'theme_location' => 'footer_menu','container_class' => 'menu genesis-nav-menu nav-footer','echo' => FALSE ) );}
     

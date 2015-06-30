@@ -70,3 +70,10 @@ else : ?>
 <?php
 endif;
 }
+
+
+add_filter('rtmedia_no_media_found_message_filter','msdlab_better_no_media_message');
+function msdlab_better_no_media_message($message){
+    $message = 'There are no photos or videos available in this section.';
+    return $message;
+}

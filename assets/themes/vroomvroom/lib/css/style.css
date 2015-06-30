@@ -6249,6 +6249,9 @@ div.gform_wrapper .gform_footer input[type="submit"] {
 img#wpstats {
   display: none;
 }
+.media .entry-content li {
+  list-style: none outside none;
+}
 /* Pre Header */
 .pre-header {
   background: #ffffff;
@@ -7861,6 +7864,7 @@ Site Footer
 }
 .sectioned-page-wrapper .section.testimonials-section .section-body .msdlab_testimonial_gallery .carousel .carousel-inner .quote {
   padding: 1rem 0;
+  height: 200px;
 }
 .sectioned-page-wrapper .section.testimonials-section .section-body .msdlab_testimonial_gallery .carousel .carousel-inner .attribution {
   font-weight: 700;
