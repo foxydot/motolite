@@ -6567,6 +6567,7 @@ Site Navigation
 .nav-primary {
   display: block;
   position: relative;
+  clear: both;
 }
 .nav-primary .menu > li.menu-item {
   padding: 0;
