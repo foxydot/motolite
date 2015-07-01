@@ -85,3 +85,36 @@ img#wpstats {
     list-style: none outside none;
   }
 }
+
+.product{
+  table.variations{
+    tr.odd{
+        background-color: @offwhite;
+    }
+    td{
+      width: 49%;
+      padding: 0;
+    }
+    td.label{
+      white-space: normal;
+      label{
+          float: none;
+          color: @medgrey;
+          font-size: 1.2em;
+          text-align: left;
+          margin: 1em;
+      }
+    }
+    td.value{
+      select{
+        float: none;
+        padding: 0.6em;
+        margin: 0.6em;
+      }
+    }
+  }
+}
+body.media{
+  overflow: auto;
+  margin-top: 0;
+}
