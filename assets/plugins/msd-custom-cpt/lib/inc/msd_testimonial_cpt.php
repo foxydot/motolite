@@ -184,6 +184,7 @@ if (!class_exists('MSDTestimonialCPT')) {
                 'link' => false,
                 'length' => false,
                 'slideshow' => false,
+                'terms' => false,
             ), $atts ) );
             global $testimonial_info;
             $args = array(
@@ -191,6 +192,18 @@ if (!class_exists('MSDTestimonialCPT')) {
                 'orderby' => rand
             );
             $args['posts_per_page'] = $slideshow?10:$rows * $columns;
+            $terms = $terms?explode(',',$terms):$slideshow?array('featured'):false;
+            if($terms){
+                $args['tax_query'] = array(
+                    array(
+                        'taxonomy' => 'testimonial_type',
+                        'field' => 'slug',
+                        'terms' => $terms
+                    ),
+                );
+            }
+            
+            
             $testimonials = get_posts($args);
             $testimonial_array = array();
             $ret = false;
