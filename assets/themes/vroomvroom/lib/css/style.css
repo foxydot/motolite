@@ -5824,8 +5824,8 @@ textarea {
   color: #545454;
   font-size: 14px;
   font-size: 1.4rem;
-  padding: 16px;
-  padding: 1.6rem;
+  padding: 8px;
+  padding: 0.8rem;
   width: 100%;
 }
 input:focus,
