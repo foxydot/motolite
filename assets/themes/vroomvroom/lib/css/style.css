@@ -6252,6 +6252,32 @@ img#wpstats {
 .media .entry-content li {
   list-style: none outside none;
 }
+.product table.variations tr.odd {
+  background-color: #f2f3f5;
+}
+.product table.variations td {
+  width: 49%;
+  padding: 0;
+}
+.product table.variations td.label {
+  white-space: normal;
+}
+.product table.variations td.label label {
+  float: none;
+  color: #7f7f7f;
+  font-size: 1.2em;
+  text-align: left;
+  margin: 1em;
+}
+.product table.variations td.value select {
+  float: none;
+  padding: 0.6em;
+  margin: 0.6em;
+}
+body.media {
+  overflow: auto;
+  margin-top: 0;
+}
 /* Pre Header */
 .pre-header {
   background: #ffffff;
