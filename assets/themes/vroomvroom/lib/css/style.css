@@ -7528,6 +7528,11 @@ Site Footer
 .sectioned-page-wrapper .section .section-body .wrap {
   padding: 1.5rem 0;
 }
+.sectioned-page-wrapper .section .section-body .wrap img {
+  -webkit-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
+}
 .sectioned-page-wrapper .section .section-body .wrap .section-content {
   line-height: 1.375;
 }
@@ -7548,6 +7553,9 @@ Site Footer
   height: 0;
   clear: both;
   visibility: hidden;
+}
+.sectioned-page-wrapper .section .section-body .section-footer-area {
+  margin-top: 0.5rem;
 }
 .sectioned-page-wrapper .section.bkg-grey {
   background-color: #f2f3f5;
