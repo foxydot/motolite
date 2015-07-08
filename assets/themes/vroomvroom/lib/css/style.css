@@ -6669,7 +6669,7 @@ Site Navigation
 .nav-primary .menu > li.menu-item:hover .sub-menu {
   height: auto;
   max-height: 1000px;
-  left: 0;
+  left: 2rem;
 }
 .nav-primary li.separator {
   color: #7eb631;
@@ -7535,6 +7535,12 @@ Site Footer
 .sectioned-page-wrapper .section .section-body .wrap .section-content p,
 .sectioned-page-wrapper .section .section-body .wrap .section-content ol {
   margin-bottom: 0;
+  font-size: 1.4rem;
+}
+.sectioned-page-wrapper .section .section-body .wrap .section-content ul a img:hover,
+.sectioned-page-wrapper .section .section-body .wrap .section-content p a img:hover,
+.sectioned-page-wrapper .section .section-body .wrap .section-content ol a img:hover {
+  opacity: 0.8;
 }
 .sectioned-page-wrapper .section .section-body:after {
   content: ".";
