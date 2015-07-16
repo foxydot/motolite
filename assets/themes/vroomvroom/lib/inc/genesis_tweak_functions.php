@@ -197,6 +197,7 @@ function msdlab_do_nav() {
     genesis_nav_menu( array(
         'theme_location' => 'primary',
         'menu_class'     => $class,
+        'walker'        => new Skew_Walker,
     ) );
 
 }
@@ -425,7 +426,7 @@ function msdlab_maybe_structural_wrap($context = '', $output = 'open', $echo = t
  * @see    http://wordpress.stackexchange.com/q/14037/
  * @author toscho, http://toscho.de
  */
-class Description_Walker extends Walker_Nav_Menu
+class Skew_Walker extends Walker_Nav_Menu
 {
         /**
      * Starts the list before the elements are added.

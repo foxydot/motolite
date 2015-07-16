@@ -6612,9 +6612,6 @@ Site Navigation
   -ms-transform: skew(150deg);
   transform: skew(150deg);
 }
-.nav-primary .menu > li.menu-item.orange {
-  background-color: #ffad00;
-}
 .nav-primary .menu > li.menu-item > a {
   font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
@@ -6631,12 +6628,14 @@ Site Navigation
   line-height: 1;
   min-height: 3em;
 }
-.nav-primary .menu > li.menu-item .sub-menu {
+.nav-primary .menu > li.menu-item .sub-menu-wrap {
   -webkit-transform: skew(30deg);
   -moz-transform: skew(30deg);
   -o-transform: skew(30deg);
   -ms-transform: skew(30deg);
   transform: skew(30deg);
+}
+.nav-primary .menu > li.menu-item .sub-menu-wrap .sub-menu {
   background-color: #7eb631;
   border-top: 0px solid #628e26;
   -webkit-box-shadow: 0 10px 10px rgba(20, 20, 20, 0.5);
@@ -6648,29 +6647,43 @@ Site Navigation
   max-height: 0;
   left: auto;
 }
-.nav-primary .menu > li.menu-item .sub-menu li.menu-item {
+.nav-primary .menu > li.menu-item .sub-menu-wrap .sub-menu li.menu-item {
   padding: 0 2rem;
   width: 100%;
   display: block;
 }
-.nav-primary .menu > li.menu-item .sub-menu li.menu-item a {
+.nav-primary .menu > li.menu-item .sub-menu-wrap .sub-menu li.menu-item a {
   background-color: transparent;
   border: 0;
   color: #ffffff;
   padding: 1rem 0;
   width: 100%;
 }
-.nav-primary .menu > li.menu-item .sub-menu li.last-child > a {
+.nav-primary .menu > li.menu-item .sub-menu-wrap .sub-menu li.last-child > a {
   border: 0;
 }
-.nav-primary .menu > li.menu-item .sub-menu li:hover > a {
+.nav-primary .menu > li.menu-item .sub-menu-wrap .sub-menu li:hover > a {
   color: #959595;
   text-decoration: none;
 }
-.nav-primary .menu > li.menu-item:hover .sub-menu {
-  height: auto;
+.nav-primary .menu > li.menu-item.orange {
+  background-color: #ffad00;
+}
+.nav-primary .menu > li.menu-item.orange .sub-menu-wrap {
+  -webkit-transform: skew(30deg);
+  -moz-transform: skew(30deg);
+  -o-transform: skew(30deg);
+  -ms-transform: skew(30deg);
+  transform: skew(30deg);
+}
+.nav-primary .menu > li.menu-item.orange .sub-menu-wrap .sub-menu {
+  background-color: #ffad00;
+}
+.nav-primary .menu > li.menu-item:hover .sub-menu-wrap .sub-menu {
   max-height: 1000px;
   left: auto;
+  opacity: 1;
+  height: auto;
 }
 .nav-primary li.separator {
   color: #7eb631;
