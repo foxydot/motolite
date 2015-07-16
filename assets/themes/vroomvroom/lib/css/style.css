@@ -6299,6 +6299,7 @@ Site Header
 ---------------------------------------------------------------------------------------------------- */
 .site-header {
   background: url(../img/bkg-hdr-default.jpg) center center no-repeat #757c6b;
+  background-size: cover;
   min-height: 450px;
   background-position: top center;
   background-repeat: no-repeat;
@@ -6645,7 +6646,7 @@ Site Navigation
   box-shadow: 0px 10px 10px rgba(20, 20, 20, 0.5);
   height: 0;
   max-height: 0;
-  left: 0;
+  left: auto;
 }
 .nav-primary .menu > li.menu-item .sub-menu li.menu-item {
   padding: 0 2rem;
@@ -6669,7 +6670,7 @@ Site Navigation
 .nav-primary .menu > li.menu-item:hover .sub-menu {
   height: auto;
   max-height: 1000px;
-  left: 2rem;
+  left: auto;
 }
 .nav-primary li.separator {
   color: #7eb631;
@@ -7528,7 +7529,7 @@ Site Footer
 .sectioned-page-wrapper .section .section-body .wrap {
   padding: 1.5rem 0;
 }
-.sectioned-page-wrapper .section .section-body .wrap img {
+.sectioned-page-wrapper .section .section-body .wrap .row .col-md-4 img {
   -webkit-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
   box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
