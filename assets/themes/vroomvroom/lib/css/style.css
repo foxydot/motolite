@@ -7747,6 +7747,40 @@ Site Footer
     margin-left: 0px;
   }
 }
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product,
+.related.products ul.products li.product {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 15px 0;
+}
+@media (min-width: 992px) {
+  .woocommerce ul.products li.product,
+  .woocommerce-page ul.products li.product,
+  .related.products ul.products li.product {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+.single-product .site-inner {
+  margin-top: 15px;
+}
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt {
+  background-color: #7eb631;
+}
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover {
+  background-color: #ffad00;
+}
 .pre-header:before,
 .pre-header:after {
   content: " ";
