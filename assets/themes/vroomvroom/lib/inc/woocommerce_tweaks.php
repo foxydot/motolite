@@ -76,3 +76,12 @@ add_filter('loop_shop_columns','msdlab_columns');
 function msdlab_columns($columns){
     return 3;
 }
+
+add_filter('woocommerce_get_price_html','msdlab_pricing');
+function msdlab_pricing($price_html){
+    preg_match('/(<span.*?>.*?<\/span>)(.*)/i',$price_html,$matches);
+    if($matches[2]){
+        return "From ".$matches[1];
+    }
+    return $price_html;
+}
