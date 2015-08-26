@@ -49,8 +49,9 @@ get_header( 'shop' ); ?>
 
 
 				<?php while ( have_posts() ) : the_post(); ?>
-
+                    <?php if ( woocommerce_products_will_display() ): ?>
 					<?php wc_get_template_part( 'content', 'product' ); ?>
+					<?php endif; ?>
 
 				<?php endwhile; // end of the loop. ?>
                 <?php woocommerce_product_subcategories(); ?>
