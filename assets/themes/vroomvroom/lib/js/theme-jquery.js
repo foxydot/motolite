@@ -3,6 +3,21 @@ jQuery(document).ready(function($) {
     $('*:last-child').addClass('last-child');
     $('*:nth-child(even)').addClass('even');
     $('*:nth-child(odd)').addClass('odd');
+    
+    $('.footer-widgets .widget.msd-connected .wrap').css('cursor','pointer').click(function(e){
+        if(e.currentTarget == e.target){
+        var siteRoot = window.location.origin?window.location.origin+'/':window.location.protocol+'/'+window.location.host+'/';
+        //alert(siteRoot); //troubleshooting
+        window.location.assign(siteRoot);
+        }
+    });
+    
+    $('.buddypress.media .entry-title').html(function(){
+        var title = $('#buddypress #item-body .rtm-gallery-title');
+        if(title.html() != "")
+            title.hide();
+            return title.html();
+    });
 	
     var numwidgets = $('.footer-widgets section.widget').length;
     $('.footer-widgets').addClass('cols-'+numwidgets);

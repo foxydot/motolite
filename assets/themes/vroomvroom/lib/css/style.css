@@ -7985,6 +7985,10 @@ Site Footer
 .tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"] > a {
   background-color: #7eb631;
 }
+.buddypress.media #buddypress #item-header,
+.buddypress.media #buddypress #item-nav {
+  display: none;
+}
 .nav-responsive ul,
 .nav-responsive li,
 .nav-responsive li a {
