@@ -175,3 +175,58 @@
     }
   }
 }
+
+.cta-overlay{
+    content: attr(alt);
+    color: @white;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top:0;
+    opacity: 0;
+    background: @yellow;
+    text-transform: uppercase;
+    padding: 2.4rem;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    .content{
+      position:relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  &:hover{
+    opacity: 1;
+  }
+  &.bkg-green{
+    background-color: fade(@green,40%);
+  }
+  &.bkg-orange{
+    background-color: fade(@orange,40%);
+  }
+  &.bkg-gray{
+    background-color: fade(@mdgrey,40%);
+  }
+  &.font-block{
+    .customheader(3.6);
+    line-height: 1.2;
+  }
+  &.font-sans{
+    .custombody(3.6);
+    line-height: 1.2;
+  }
+  &.font-xs{
+    font-size: 1.8rem;
+  }
+  &.font-sm{
+    font-size: 2.4rem;
+  }
+  &.font-lg{
+    font-size: 4.8rem;
+  }
+  &.font-xl{
+    font-size: 6rem;
+  }
+}

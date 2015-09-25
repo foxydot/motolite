@@ -51,5 +51,16 @@ jQuery(document).ready(function($) {
 	        $(this).html('LESS <i class="fa fa-angle-up"></i>');
 	    }
 	});
-	
+	$('img.cta').after(function(){
+	    var classes = $(this).attr('class').split(' ');
+	    var filtered = classes.filter(ctaClassFilter);
+	    var content = $(this).attr('alt');
+	    return '<div class="cta-overlay ' + filtered.join(' ') + '" style="height:' + $(this).height() + 'px;width:' + $(this).width() + 'px;"><div class="content">' + content + '</div></div>';
+	});
 });
+
+
+var ctaClassFilter = function(value){
+    var rx = new RegExp('(font|bkg)-.*');
+    return rx.test(value);
+};
