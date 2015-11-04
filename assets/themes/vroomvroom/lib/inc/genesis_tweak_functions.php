@@ -5,10 +5,11 @@
 function msdlab_make_it_homepage(){
     if(is_front_page()){
         remove_action('genesis_entry_header', 'genesis_do_post_title');
-        add_action('genesis_after_header','msdlab_hero');
+        add_action('genesis_before_header','msdlab_hero');
         remove_action('genesis_before_footer','genesis_footer_widget_areas');
         add_action('genesis_before_footer','msdlab_homepage_widgets',-4);
         add_action('genesis_before_footer','genesis_footer_widget_areas');
+        add_action('genesis_header','msdlab_add_homepage_ctas');
     }
 }
 /**
@@ -117,7 +118,7 @@ function msdlab_header_right(){
 //add featured image to page header
 function msdlab_header_attr( $attributes ){
     global $post;
-    if(is_page()){
+    if(is_page() && !is_front_page()){
         $url = msdlab_get_thumbnail_url($post->ID, 'full');
         if($url != '')
             $attributes['style'] .= 'background-image: url('.$url.');';
@@ -135,6 +136,14 @@ function msdlab_do_header() {
     do_action( 'genesis_site_title' );
     do_action( 'genesis_site_description' );
     echo '</div>';
+}
+
+function msdlab_add_homepage_ctas(){
+    print '
+    <div class="homepage-ctas">
+        <div class="logo pull-left"></div>
+        <a href="#" class="tag skewit pull-right"><div class="unskewit">Sign Up for Special Offers</div></a>
+    </div>';
 }
  /**
  * Customize search form input

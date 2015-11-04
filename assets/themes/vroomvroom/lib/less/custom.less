@@ -184,7 +184,7 @@
     position: absolute;
     top:0;
     opacity: 0;
-    background: @yellow;
+    background: fade(@white,40%);
     text-transform: uppercase;
     padding: 2.4rem;
     -webkit-transition: all 0.5s ease-in-out;
@@ -202,6 +202,12 @@
   }
   &.bkg-green{
     background-color: fade(@green,40%);
+  }
+  &.bkg-red{
+    background-color: fade(@red,40%);
+  }
+  &.bkg-blue{
+    background-color: fade(@blue,40%);
   }
   &.bkg-orange{
     background-color: fade(@orange,40%);

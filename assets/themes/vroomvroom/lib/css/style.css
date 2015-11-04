@@ -8002,7 +8002,7 @@ Site Footer
   position: absolute;
   top: 0;
   opacity: 0;
-  background: #ff0;
+  background: rgba(255, 255, 255, 0.4);
   text-transform: uppercase;
   padding: 2.4rem;
   -webkit-transition: all 0.5s ease-in-out;
@@ -8021,6 +8021,12 @@ Site Footer
 }
 .cta-overlay.bkg-green {
   background-color: rgba(126, 182, 49, 0.4);
+}
+.cta-overlay.bkg-red {
+  background-color: rgba(255, 0, 0, 0.4);
+}
+.cta-overlay.bkg-blue {
+  background-color: rgba(65, 146, 202, 0.4);
 }
 .cta-overlay.bkg-orange {
   background-color: rgba(255, 173, 0, 0.4);
