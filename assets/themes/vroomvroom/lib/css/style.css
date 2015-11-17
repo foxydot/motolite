@@ -6679,6 +6679,17 @@ Site Navigation
 .nav-primary .menu > li.menu-item.orange .sub-menu-wrap .sub-menu {
   background-color: #FFAD00;
 }
+.nav-primary .menu > li.menu-item.cart-button > a:before {
+  font-family: FontAwesome;
+  content: '\f07a';
+  font-size: 1.6em;
+  line-height: 0;
+  position: relative;
+  top: 0.25em;
+}
+.nav-primary .menu > li.menu-item.cart-button > a > span {
+  display: none;
+}
 .nav-primary .menu > li.menu-item:hover .sub-menu-wrap .sub-menu {
   max-height: 1000px;
   left: auto;
