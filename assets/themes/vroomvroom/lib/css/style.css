@@ -8005,6 +8005,9 @@ Site Footer
 .buddypress.media #buddypress #item-nav {
   display: none;
 }
+.buddypress.media .rtm-gallery-list .rtmedia-item-title {
+  display: none;
+}
 .cta-overlay {
   content: attr(alt);
   color: #FFF;
