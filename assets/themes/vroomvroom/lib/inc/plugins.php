@@ -76,3 +76,9 @@ function msdlab_better_no_media_message($message){
     $message = 'There are no photos or videos available in this section.';
     return $message;
 }
+
+add_filter('filter_allowed_sorting_columns','msdlab_sort_by_title_allowed');
+function msdlab_sort_by_title_allowed($allowed){
+    $allowed[] = 'media_title';
+    return $allowed;
+}
