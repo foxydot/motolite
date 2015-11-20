@@ -8005,8 +8005,11 @@ Site Footer
 .buddypress.media #buddypress #item-nav {
   display: none;
 }
-.buddypress.media .rtm-gallery-list .rtmedia-item-title {
+.rtmedia-container .rtmedia-item-title {
   display: none;
+}
+.rtmedia-container .rtmedia-album-list .rtmedia-item-title {
+  display: block;
 }
 .cta-overlay {
   content: attr(alt);
