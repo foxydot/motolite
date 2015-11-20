@@ -142,7 +142,7 @@ function msdlab_add_homepage_ctas(){
     print '
     <div class="homepage-ctas">
         <div class="logo pull-left"></div>
-        <a href="#" class="tag skewit pull-right"><div class="unskewit">Sign Up for Special Offers</div></a>
+        <a href="#gform_widget-2" class="tag skewit pull-right"><div class="unskewit">Sign Up for Special Offers</div></a>
     </div>';
 }
  /**
