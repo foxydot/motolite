@@ -7266,6 +7266,7 @@ Footer Widgets
   background: url(../img/block-logo.png) no-repeat 10px 10px;
   padding-left: 130px;
   background-size: 90px 90px;
+  min-height: 100px;
 }
 .footer-widgets .widget.msd-connected .wrap:before,
 .footer-widgets .widget.msd-connected .wrap:after {
@@ -7330,9 +7331,6 @@ Footer Widgets
 }
 .footer-widgets .connected-address span.msdsocial_street {
   display: block;
-}
-.footer-widgets .connected-social .social-media {
-  float: right;
 }
 .footer-widgets .connected-social .social-media a.fa {
   background: none;
