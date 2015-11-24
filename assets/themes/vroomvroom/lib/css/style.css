@@ -7809,6 +7809,9 @@ Site Footer
 .woocommerce input.button.alt:hover {
   background-color: #FFAD00;
 }
+.woocommerce ul#shipping_method li {
+  text-indent: 0 !important;
+}
 .pre-header:before,
 .pre-header:after {
   content: " ";
