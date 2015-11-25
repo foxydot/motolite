@@ -8117,30 +8117,71 @@ Site Footer
     margin: 0 auto;
     text-align: center;
   }
-  .header-image .site-header .title-area {
-    width: 100%;
-    margin: 0 auto;
-    float: none;
-  }
-  .header-image .site-header .title-area .site-title a {
-    width: 100%;
-    margin: 1rem auto;
-    float: none;
-  }
   .header-image .site-header .nav-primary {
     margin: 0 auto;
     float: none;
+  }
+  .home-page.header-image .site-header {
+    min-height: 688px;
+    margin: -688px auto 0;
+  }
+  .home-page.header-image .homepage-ctas {
+    bottom: 14px;
+    width: 768px;
+  }
+  .home-page.header-image .homepage-ctas .logo {
+    background-size: 80px 80px;
+    height: 80px;
+    width: 80px;
+  }
+  .home-page.header-image .homepage-ctas .tag div {
+    font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 1.625;
   }
 }
 /* Mobile */
 @media only screen and (max-width: 767px) {
   /* Enter Your Custom Styles Here */
+  .header-image .site-title a {
+    background-size: 320px auto;
+    min-height: 70px;
+    width: 360px;
+  }
+  .home-page.header-image .site-header {
+    min-height: 481px;
+    margin: -481px auto 0;
+  }
+  .home-page.header-image .homepage-ctas {
+    bottom: 60px;
+    width: 480px;
+  }
+  .home-page.header-image .homepage-ctas .logo {
+    background-size: 60px 60px;
+    height: 60px;
+    width: 60px;
+  }
+  .home-page.header-image .homepage-ctas .tag div {
+    font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 1.625;
+  }
   .mobile-only {
     display: block;
   }
   .nav-primary {
     float: none;
     display: block;
+    width: 100%;
+    position: absolute;
+    top: 404px;
+  }
+  .home-page.header-image .nav-primary {
+    top: 435px;
   }
   .nav-responsive {
     text-align: left;
@@ -8154,7 +8195,7 @@ Site Footer
     display: inline-block;
     width: 100%;
     text-indent: 20px;
-    background: #4192CA;
+    background: #7EB631;
     min-height: 46px;
     padding-top: 14px;
     position: relative;
@@ -8175,7 +8216,7 @@ Site Footer
     padding: 0;
   }
   .nav-responsive a#pull ul#mobile_menu li a {
-    background: #4192CA;
+    background: #7EB631;
     color: #FFF;
     display: block;
     width: 100%;
@@ -8187,7 +8228,7 @@ Site Footer
     right: 15px;
   }
   .nav-responsive a#pull ul#mobile_menu li a:hover {
-    background: #69a9d5;
+    background: #97cf4b;
   }
   .nav-responsive a#pull ul#mobile_menu li .toggle-switch {
     margin-right: 12px;
@@ -8217,7 +8258,7 @@ Site Footer
     display: none;
   }
   .nav-responsive a#pull ul#mobile_menu li.current-menu-item a {
-    background: #7db4db;
+    background: #a3d45f;
   }
   .nav-responsive a#pull:hover {
     text-decoration: none;
@@ -8227,7 +8268,7 @@ Site Footer
     font-family: 'FontAwesome';
     font-size: 2.2rem;
     text-indent: 0;
-    color: #4192CA;
+    color: #7EB631;
     text-align: center;
     width: 30px;
     height: 30px;
@@ -8257,6 +8298,28 @@ Site Footer
   }
   .pre-header .wrap .header-widget-area .msd-connected {
     margin-top: -1.5rem;
+  }
+  .home-page.header-image .site-header {
+    min-height: 353px;
+    margin: -353px auto 0;
+  }
+  .home-page.header-image .homepage-ctas {
+    width: 320px;
+  }
+  .home-page.header-image .homepage-ctas .logo {
+    background-size: 40px 40px;
+    height: 40px;
+    width: 40px;
+  }
+  .home-page.header-image .homepage-ctas .tag div {
+    font-family: "Roboto Slab", "Roboto", "Trebuchet MS", Calibri, sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    font-size: 1rem;
+    line-height: 1.625;
+  }
+  .home-page.header-image .nav-primary {
+    top: 312px;
   }
   .tablepress td,
   .tablepress th {
