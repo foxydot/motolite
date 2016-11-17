@@ -79,9 +79,9 @@ function msdlab_columns($columns){
 
 add_filter('woocommerce_get_price_html','msdlab_pricing');
 function msdlab_pricing($price_html){
-    preg_match('/(<span.*?>.*?<\/span>)(.*)/i',$price_html,$matches);
-    if($matches[2]){
-        return "From ".$matches[1];
+    preg_match_all('/(<span.*?>\d[\d\,\.]+<\/span>)/i',$price_html,$matches);
+    if($matches[0][1]){
+        return "From ".$matches[0][0];
     }
     return $price_html;
 }
